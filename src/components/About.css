@@ -1,0 +1,12 @@
+
+
+#container {
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Merriweather', serif;
+    background-color: #145DA0;
+    color: aliceblue; 
+}
+
+.linea {
+    border-left: 5px black;
+}
