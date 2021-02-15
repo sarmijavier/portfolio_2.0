@@ -20,6 +20,7 @@ export const About = () => {
                     <br />
                     <br />
                     <br />
+                    
                     Hola mi nombre es Javier, y soy un apasionado por la tecnología.
                 </span>
 
