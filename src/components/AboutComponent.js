@@ -1,4 +1,4 @@
-import { Row, Col, BSpan  } from 'bootstrap-4-react';
+import { Row, Col } from 'bootstrap-4-react';
 
 
 

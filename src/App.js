@@ -1,6 +1,7 @@
 import { NavbarComponent } from "./components/NavbarComponent";
-import { Container } from 'bootstrap-4-react';
+import { Container, Col, Row } from 'bootstrap-4-react';
 import { About } from "./components/AboutComponent";
+import { Project } from "./components/ProjectComponent";
 
 
 function App() {
@@ -13,6 +14,18 @@ function App() {
       <Container id="container">
        
         <About />
+        <Row>
+          <Col>
+          <Project />
+          </Col>
+          <Col>
+          <Project />
+          </Col>
+          <Col>
+          <Project />
+          </Col>
+        </Row>
+        <Project />
       </Container>
     </>
 
