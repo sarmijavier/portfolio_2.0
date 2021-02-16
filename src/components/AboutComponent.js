@@ -13,7 +13,7 @@ export const About = () => {
       }
     return (
         <>
-        <Row>
+        <Row mb="5">
             <Col style={boxStyle} border="right" className="animate__animated animate__backInLeft" >
                 <span mr="5" >
                     <br />
