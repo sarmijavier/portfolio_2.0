@@ -1,17 +1,17 @@
-import { Card} from 'bootstrap-4-react';
+import { Card, Figure } from 'bootstrap-4-react';
 
 
-export const Project = () => {
+export const Project = ({ name, url, description, link }) => {
+    console.log(link)
     return (
-        <Card style={{ width: '18rem' }}>
+        <Card  text="center" className='animate__animated animate__bounceIn' m="2" border="dark" >
             <Card.Body>
-                <Card.Title>Card title</Card.Title>
-                <Card.Subtitle mb="2" text="muted">Card subtitle</Card.Subtitle>
-                <Card.Text>
-                    Some quick example text to build on the card title and make up the bulk of the card content.
-          </Card.Text>
-                <Card.Link href="#">Card link</Card.Link>
-                <Card.Link href="#">Another link</Card.Link>
+                <Card.Title mx="auto" style={{ color: '#015249', height: '2rem' }} > {name} </Card.Title>
+                <Figure>
+                    <Figure.Image mx="auto" style={{ background: '#015249', width: '60%' }} src={url}/>
+                    <Figure.Caption style={{ background: '#015249', color:'white' }}>{ description }</Figure.Caption>
+                </Figure>
+                <Card.Link target='_blank' href={link} style={{ color: '#015249', height: '2rem' }}>see on GitHub</Card.Link>
             </Card.Body>
         </Card>
     )

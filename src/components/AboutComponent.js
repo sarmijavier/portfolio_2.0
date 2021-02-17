@@ -1,51 +1,49 @@
-import { Row, Col } from 'bootstrap-4-react';
-
+import { Row, Col, BDiv, Figure } from 'bootstrap-4-react';
+import techImage from './technologies.png';
 
 
 export const About = () => {
-
-    const boxStyle = {
-        display: 'inline-block',
-        width: '5rem',
-        height: '20rem',
-        margin: '.25rem',
-        backgroundColor: '#145DA0'
-      }
     return (
         <>
-        <Row mb="5">
-            <Col style={boxStyle} border="right" className="animate__animated animate__backInLeft" >
-                <span mr="5" >
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    
-                    Hola mi nombre es Javier, y soy un apasionado por la tecnología.
-                </span>
 
-            </Col>
-            <Col> 
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                <Row>
-                    <Col offset="lg-4">                
-                        <h2 className="animate__animated animate__backInLeft" >Soy Desarrollador</h2>
-                    </Col>
-                    <Col></Col>
-                    <Col offset="lg-8">                
-                        <h2 className="animate__animated animate__backInLeft" >De Software</h2>
-                    </Col>
-                
-                </Row>       
-                
-            </Col>
-            <Col></Col>
-        </Row>
+            <Row className="animate__animated animate__backInLeft">
+                <Col col="sm-12 md-6 lg-6" border="right">
+                    <BDiv mx="auto" m="5" style={{ width: '400px' }}>
+                        <spma>
+                            The life
+                            is a sprint full of constantly learning, researching and helping.
+                        </spma>
+                    </BDiv>
 
-    
+
+                </Col>
+                <Col col="sm-12 md-6 lg-6" border="right">
+                    <BDiv mx="auto" m="5" style={{ width: '400px' }}>
+                        <spam>
+                            Hi, my name is H Javier Sarmiento Y,<br /> I'm a computer science student with passion for technology. Always learning,
+                            improving my knowledge and skills. Willing to accept challenges and giving the 110% of me.
+                        </spam>
+                    </BDiv>
+                </Col>
+
+            </Row>
+
+            <Row>
+                <Col col="12">
+                    <BDiv mx="auto" m="5" style={{ width: '111px' }} >
+                        <h4>technologies</h4>
+                    </BDiv>
+
+                </Col>
+                <Col text="center">
+                <Figure>
+                    <Figure.Image mx="auto" style={{ background: '#015249', width: '60%' }} src={ techImage }/>
+                </Figure>
+                </Col>
+
+            </Row>
+
+
         </>
     )
 }
