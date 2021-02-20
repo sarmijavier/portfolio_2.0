@@ -4,7 +4,7 @@ version: '3.7'
 services: 
 
   portfolio2.0:
-    container_name: portfolio2.0
+    container_name: portfolio2.0-pro
     build: 
       context: .
       dockerfile: Dockerfile
