@@ -10,10 +10,10 @@ import React, { useState } from 'react';
 
 
 const App = ({ defautlProjects = projects }) => {
-  
-  const [projects, setProjects] = useState( defautlProjects )
+
+  const [projects, setProjects] = useState(defautlProjects)
   return (
-    
+
 
     <>
 
@@ -22,8 +22,8 @@ const App = ({ defautlProjects = projects }) => {
 
         <Row>
           <Col col="12">
-            <BDiv  mx="auto" m="5" style={{ width: '111px' }} >
-               <h4 id="about" >about_me</h4>
+            <BDiv mx="auto" m="5"  >
+              <h4 id="about" >about_me</h4>
             </BDiv>
           </Col>
 
@@ -31,36 +31,38 @@ const App = ({ defautlProjects = projects }) => {
 
         <About />
 
+
+
         <Row>
           <Col col="12">
-            <BDiv  mx="auto" m="5" style={{ width: '111px' }} >
-               <h4 id="project">my_projects</h4>
+            <BDiv mx="auto" m="5"  >
+              <h4 id="project">my_projects</h4>
             </BDiv>
-         
+
           </Col>
         </Row>
         <Row mx="auto">
- 
-            {
-              projects.map( project => (
-                <Col col="sm-12 md-6 lg-6"  >
-                <Project 
-                  key={ project.name } 
-                  name={ project.name } 
-                  url={ project.url } 
-                  description={ project.description } 
-                  link={ project.link }/>
-          </Col>
-              ))
-            } 
+
+          {
+            projects.map(project => (
+              <Col col="sm-12 md-6 lg-6"  >
+                <Project
+                  key={project.name}
+                  name={project.name}
+                  url={project.url}
+                  description={project.description}
+                  link={project.link} />
+              </Col>
+            ))
+          }
 
         </Row>
         <Col col="12">
-            <BDiv  mx="auto" m="5" style={{ width: '111px' }} >
-               <h4 id="contact">contact_me</h4>
-            </BDiv>
-         
-          </Col>
+          <BDiv mx="auto" m="5"  >
+            <h4 id="contact">contact_me</h4>
+          </BDiv>
+
+        </Col>
         <Footer />
       </Container>
     </>

@@ -8,8 +8,8 @@ export const Footer = () => {
     return (
         <>
             <Row>
-                <Col mx="auto"  style={{ width: '200px' }}>
-                    <BDiv text="center" mx="auto" border="bottom" style={{ width: '400px' }}>
+                <Col  mx="auto"  style={{ width: '100%' }}>
+                    <BDiv text="center" mx="auto" border="bottom" style={{ width: '100%' }}>
                         <BDiv m="1">
                             <SocialIcon style={{ margin:'0rem 1rem 1rem 0rem'}} target='_blank' url="https://twitter.com/SarmiJavier" network="twitter" />
                         </BDiv>
@@ -23,8 +23,8 @@ export const Footer = () => {
 
 
 
-                <Col mx="auto" m="5" style={{ width: '200px' }}>
-                    <BDiv text="center" mx="auto" border="bottom" style={{ width: '400px' }}>
+                <Col  mx="auto" m="5" style={{ width: '100%' }}>
+                    <BDiv text="center" mx="auto" border="bottom" style={{ width: '100%' }}>
                         "The beginning is the most important part of the work." Platon.
                     </BDiv>
                 </Col>
